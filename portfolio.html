@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jyothi Surekha | Frontend Developer</title>
+<meta name="description" content="Portfolio of Jyothi Surekha, Frontend Developer and Java Full Stack Developer.">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;line-height:1.6;background:#0b1020;color:#eef2ff}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(11,16,32,.88);backdrop-filter:blur(12px);border-bottom:1px solid #26304d}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.2rem;font-weight:800}.logo span{color:#7c8cff}
+.navlinks{display:flex;gap:26px;list-style:none}.navlinks a{color:#c9d2ee;font-size:.95rem}.navlinks a:hover{color:#fff}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:72px;background:radial-gradient(circle at 80% 20%,#263a85 0,transparent 35%),radial-gradient(circle at 10% 80%,#18265d 0,transparent 30%)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+.badge{display:inline-block;border:1px solid #394b8f;background:#151e3c;padding:7px 14px;border-radius:999px;color:#b9c5ff;margin-bottom:20px}
+h1{font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.02;letter-spacing:-3px}
+.gradient{background:linear-gradient(90deg,#8d9aff,#bda7ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:24px 0;color:#b7c1db;max-width:650px;font-size:1.1rem}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;border:1px solid #46558f}.primary{background:#7c8cff;color:#08102a;border-color:#7c8cff}.secondary{color:#dce3ff}
+.code-card{background:#111a32;border:1px solid #2b3964;border-radius:18px;padding:25px;box-shadow:0 25px 70px rgba(0,0,0,.25);font-family:Consolas,monospace;color:#cbd5ff}
+.code-card .key{color:#9da9ff}.code-card .str{color:#9fe3bd}.code-card .num{color:#f3c37a}.lottie-wrap{height:150px;display:flex;justify-content:center;align-items:center;margin-top:12px}.lottie-wrap lottie-player{width:150px;height:150px}
+section{padding:100px 0}.section-title{font-size:2.2rem;margin-bottom:12px}.section-sub{color:#aab5d2;margin-bottom:38px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about p{color:#b8c2da}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#11182d;border:1px solid #293655;border-radius:16px;padding:24px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#5368b8}
+.card h3{margin-bottom:8px}.card p{color:#aeb9d4;font-size:.95rem}
+.skills{display:flex;flex-wrap:wrap;gap:12px}.skill{padding:10px 15px;background:#151f3a;border:1px solid #30416e;border-radius:10px;color:#dce3ff}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.project-visual{min-height:300px;border-radius:18px;background:linear-gradient(135deg,#202d63,#121a34);border:1px solid #354575;display:flex;align-items:center;justify-content:center;font-size:4rem}.project-info{padding:10px 0}.project-info p{color:#b5c0d9;margin:15px 0}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:.82rem;background:#1b2645;padding:6px 10px;border-radius:7px;color:#cbd5ff}
+.timeline{border-left:2px solid #394b7b;padding-left:25px}.timeline-item{margin-bottom:35px;position:relative}.timeline-item:before{content:"";position:absolute;left:-32px;top:7px;width:12px;height:12px;border-radius:50%;background:#8290ff}.timeline-item h3{font-size:1.2rem}.timeline-item .date{color:#8996bd;font-size:.9rem}.timeline-item p{color:#aeb9d2;margin-top:8px}
+.contact-box{background:#111a32;border:1px solid #2d3b63;border-radius:20px;padding:35px;display:flex;justify-content:space-between;gap:25px;align-items:center}.contact-box p{color:#aeb9d4}
+footer{padding:30px 0;border-top:1px solid #26304d;color:#8793b5;text-align:center}
+.menu{display:none;background:none;border:0;color:white;font-size:1.5rem}
+@media(max-width:800px){.navlinks{display:none}.menu{display:block}.hero-grid,.about,.project{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.code-card{display:none}h1{letter-spacing:-2px}.contact-box{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav><div class="container navbar">
+<a class="logo" href="#home">Jyothi<span>.</span></a>
+<ul class="navlinks"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+<button class="menu" aria-label="Menu">☰</button>
+</div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div>
+<span class="badge">Frontend Developer</span>
+<h1>Hi, I'm <span class="gradient">Jyothi Surekha</span>.</h1>
+<p>I’m a passionate software developer with hands-on training in Java Full Stack Development and a strong interest in creating responsive, user-friendly web interfaces.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View My Work</a><a class="btn secondary" href="#contact">Let's Connect</a></div>
+</div>
+<div><div class="code-card">
+<div>{</div><div>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="str">"Jyothi Surekha"</span>,</div>
+<div>&nbsp;&nbsp;<span class="key">"role"</span>: <span class="str">"Frontend Developer"</span>,</div>
+<div>&nbsp;&nbsp;<span class="key">"skills"</span>: [</div><div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"HTML5"</span>, <span class="str">"CSS3"</span>,</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"JavaScript"</span>, <span class="str">"ReactJS"</span></div><div>&nbsp;&nbsp;],</div>
+<div>&nbsp;&nbsp;<span class="key">"projects"</span>: <span class="num">1</span></div><div>}</div>
+</div><div class="lottie-wrap"><lottie-player src="https://assets10.lottiefiles.com/packages/lf20_kkflmt0o.json" background="transparent" speed="1" loop autoplay></lottie-player></div></div>
+</div></header>
+
+<section id="about"><div class="container">
+<h2 class="section-title">About Me</h2><p class="section-sub">A developer focused on learning, building, and improving.</p>
+<div class="about"><div><p>I completed an intensive 8-month Java Full Stack Development training program, building a foundation across frontend, backend, databases, and REST APIs. My frontend focus includes HTML, CSS, JavaScript, Bootstrap, and basic ReactJS.</p><br><p>I enjoy solving problems, debugging applications, and turning requirements into clean, responsive user interfaces.</p></div>
+<div class="cards"><div class="card"><h3>🎨 UI Development</h3><p>Responsive and user-friendly interfaces using modern frontend fundamentals.</p></div><div class="card"><h3>⚡ JavaScript</h3><p>Interactive web experiences using JavaScript and practical application development.</p></div><div class="card"><h3>🎯 UI/UX</h3><p>Focused on clean layouts, responsive interfaces, wireframes, usability, and user-centered design.</p></div></div></div>
+</div></section>
+
+<section id="skills"><div class="container"><h2 class="section-title">Technical Skills</h2><p class="section-sub">Frontend technologies, development tools, and UI/UX design skills.</p>
+<div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">ReactJS</span><span class="skill">Bootstrap</span><span class="skill">UI/UX Design</span><span class="skill">Figma</span><span class="skill">Wireframing</span><span class="skill">Prototyping</span><span class="skill">Responsive UI Design</span><span class="skill">User-Centered Design</span><span class="skill">Mobile UI Design</span><span class="skill">Design Systems</span><span class="skill">Core Java</span><span class="skill">Spring Boot</span><span class="skill">MySQL</span><span class="skill">REST APIs</span><span class="skill">Git & GitHub</span><span class="skill">Postman</span><span class="skill">Maven</span></div>
+</div></section>
+
+<section id="projects"><div class="container"><h2 class="section-title">Featured Project</h2><p class="section-sub">A responsive web application built with modern frontend technologies.</p>
+<div class="project"><div class="project-visual">🔎</div><div class="project-info"><h3>Wikipedia Search Web Application</h3><p><strong>Role:</strong> Frontend Developer</p><p>Developed a responsive Wikipedia search web application that allows users to search and explore Wikipedia content through a clean, interactive interface. Implemented dynamic search results using JavaScript Fetch API and REST API integration.</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">REST API</span><span class="tag">Fetch API</span><span class="tag">Responsive Design</span></div></div></div>
+</div></section>
+
+<section id="experience"><div class="container"><h2 class="section-title">Training & Experience</h2><p class="section-sub">My development journey.</p>
+<div class="timeline"><div class="timeline-item"><h3>Java Full Stack Development Training</h3><span class="date">8-month intensive training</span><p>Built practical knowledge in Core Java, OOP, HTML, CSS, JavaScript, React basics, MySQL, CRUD operations, REST APIs, and full-stack application development.</p></div>
+<div class="timeline-item"><h3>Wikipedia Search Web Application — Frontend Developer</h3><span class="date">Frontend Project</span><p>Built a responsive search interface using HTML5, CSS3, and JavaScript, with REST API integration, dynamic results, loading states, responsive layouts, animations, and interactive result cards.</p></div></div>
+</div></section>
+
+<section><div class="container"><h2 class="section-title">Education</h2><div class="cards"><div class="card"><h3>Bachelor's Degree</h3><p>AKNU University · 2023 · 8.9 CGPA</p></div><div class="card"><h3>Intermediate</h3><p>SRI RAVI JUNIOR College · 2020 · 9.8 CGPA</p></div><div class="card"><h3>SSC</h3><p>S D V R R A High School · 2018 · 9.5 CGPA</p></div></div></div></section>
+
+<section id="contact"><div class="container"><div class="contact-box"><div><h2 class="section-title">Let's Work Together</h2><p>I'm open to opportunities where I can grow as a frontend developer and contribute to meaningful software projects.</p><p style="margin-top:14px;">📍 Sunkarapalem, Kakinada · 📞 <a href="tel:8790557391">8790557391</a> · ✉️ <a href="mailto:sunkarajyothisurekha@gmail.com">sunkarajyothisurekha@gmail.com</a></p></div><div class="buttons"><a class="btn primary" href="mailto:sunkarajyothisurekha@gmail.com">Email Me</a><a class="btn secondary" href="https://www.linkedin.com/in/jyothi-surekha-sunkara-b59730422?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="btn secondary" href="https://github.com/jyothi-sunkara" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></div></section>
+
+<footer><div class="container">© 2026 Jyothi Surekha · Frontend Developer</div></footer>
+<script>
+const menu=document.querySelector('.menu'), links=document.querySelector('.navlinks');
+menu.addEventListener('click',()=>{links.style.display=links.style.display==='flex'?'none':'flex';links.style.flexDirection='column';links.style.position='absolute';links.style.top='72px';links.style.right='4%';links.style.background='#11182d';links.style.padding='18px';links.style.border='1px solid #293655';links.style.borderRadius='12px'});
+</script>
+</body>
+</html>
